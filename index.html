@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PerformativeApply - Personalized Job Finder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">PerformativeApply</h1>
+            <p class="tagline">Your personalized job finder</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-tabs">
+        <div class="container">
+            <button class="nav-tab active" data-tab="discover">Discover</button>
+            <button class="nav-tab" data-tab="saved">Saved</button>
+            <button class="nav-tab" data-tab="profile">Profile</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Discover Tab -->
+            <section id="discover" class="tab-content active">
+                <!-- Search & Filter Bar -->
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search by role, company...">
+                    <button class="search-btn">🔍</button>
+                </div>
+
+                <!-- Filter Section -->
+                <div class="filters">
+                    <div class="filter-group">
+                        <label>Job Type</label>
+                        <select class="filter-select">
+                            <option value="all">All Types</option>
+                            <option value="full-time">Full Time</option>
+                            <option value="part-time">Part Time</option>
+                            <option value="contract">Contract</option>
+                            <option value="remote">Remote</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Salary Range</label>
+                        <select class="filter-select">
+                            <option value="all">Any</option>
+                            <option value="30-50">$30K - $50K</option>
+                            <option value="50-75">$50K - $75K</option>
+                            <option value="75-100">$75K - $100K</option>
+                            <option value="100+">$100K+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Job Cards Grid -->
+                <div class="jobs-grid">
+                    <!-- Job Card 1 -->
+                    <div class="job-card">
+                        <div class="job-header">
+                            <div class="job-title-section">
+                                <h3 class="job-title">Senior React Developer</h3>
+                                <p class="company-name">TechCorp Inc.</p>
+                            </div>
+                            <button class="btn-save">♡</button>
+                        </div>
+                        <div class="job-meta">
+                            <span class="badge badge-remote">Remote</span>
+                            <span class="badge badge-full-time">Full Time</span>
+                        </div>
+                        <div class="job-details">
+                            <p><strong>Location:</strong> San Francisco, CA</p>
+                            <p><strong>Salary:</strong> $120K - $150K</p>
+                        </div>
+                        <p class="job-description">
+                            We're looking for an experienced React developer to join our growing team. Experience with TypeScript and Next.js required.
+                        </p>
+                        <div class="job-footer">
+                            <button class="btn-primary">View Details</button>
+                            <button class="btn-secondary">Apply Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Job Card 2 -->
+                    <div class="job-card">
+                        <div class="job-header">
+                            <div class="job-title-section">
+                                <h3 class="job-title">Product Manager</h3>
+                                <p class="company-name">StartupXYZ</p>
+                            </div>
+                            <button class="btn-save">♡</button>
+                        </div>
+                        <div class="job-meta">
+                            <span class="badge badge-hybrid">Hybrid</span>
+                            <span class="badge badge-full-time">Full Time</span>
+                        </div>
+                        <div class="job-details">
+                            <p><strong>Location:</strong> New York, NY</p>
+                            <p><strong>Salary:</strong> $100K - $130K</p>
+                        </div>
+                        <p class="job-description">
+                            Join our founding team as a Product Manager. You'll lead product strategy and work closely with engineers and designers.
+                        </p>
+                        <div class="job-footer">
+                            <button class="btn-primary">View Details</button>
+                            <button class="btn-secondary">Apply Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Job Card 3 -->
+                    <div class="job-card">
+                        <div class="job-header">
+                            <div class="job-title-section">
+                                <h3 class="job-title">UX/UI Designer</h3>
+                                <p class="company-name">DesignHub</p>
+                            </div>
+                            <button class="btn-save">♡</button>
+                        </div>
+                        <div class="job-meta">
+                            <span class="badge badge-remote">Remote</span>
+                            <span class="badge badge-contract">Contract</span>
+                        </div>
+                        <div class="job-details">
+                            <p><strong>Location:</strong> Remote</p>
+                            <p><strong>Rate:</strong> $50 - $75/hr</p>
+                        </div>
+                        <p class="job-description">
+                            Design beautiful user interfaces for our suite of products. Portfolio required. Figma expertise a plus.
+                        </p>
+                        <div class="job-footer">
+                            <button class="btn-primary">View Details</button>
+                            <button class="btn-secondary">Apply Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Job Card 4 -->
+                    <div class="job-card">
+                        <div class="job-header">
+                            <div class="job-title-section">
+                                <h3 class="job-title">DevOps Engineer</h3>
+                                <p class="company-name">CloudWorks</p>
+                            </div>
+                            <button class="btn-save">♡</button>
+                        </div>
+                        <div class="job-meta">
+                            <span class="badge badge-remote">Remote</span>
+                            <span class="badge badge-full-time">Full Time</span>
+                        </div>
+                        <div class="job-details">
+                            <p><strong>Location:</strong> Remote</p>
+                            <p><strong>Salary:</strong> $110K - $140K</p>
+                        </div>
+                        <p class="job-description">
+                            Help us scale our infrastructure. AWS, Docker, and Kubernetes experience essential. 5+ years required.
+                        </p>
+                        <div class="job-footer">
+                            <button class="btn-primary">View Details</button>
+                            <button class="btn-secondary">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Saved Tab -->
+            <section id="saved" class="tab-content">
+                <div class="empty-state">
+                    <div class="empty-icon">💼</div>
+                    <h2>No Saved Jobs Yet</h2>
+                    <p>Jobs you save will appear here. Start exploring to find your perfect match!</p>
+                </div>
+            </section>
+
+            <!-- Profile Tab -->
+            <section id="profile" class="tab-content">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-avatar">👤</div>
+                        <div class="profile-info">
+                            <h2>Your Profile</h2>
+                            <p class="profile-role">Job Seeker</p>
+                        </div>
+                    </div>
+                    <div class="profile-section">
+                        <h3>Profile Preferences</h3>
+                        <div class="preference-item">
+                            <label>Preferred Job Types:</label>
+                            <p>Full Time, Remote</p>
+                        </div>
+                        <div class="preference-item">
+                            <label>Target Salary:</label>
+                            <p>$80K - $120K</p>
+                        </div>
+                        <div class="preference-item">
+                            <label>Skills:</label>
+                            <p>React, TypeScript, Node.js</p>
+                        </div>
+                    </div>
+                    <button class="btn-primary btn-full">Edit Profile</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 PerformativeApply. Find your next opportunity.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
